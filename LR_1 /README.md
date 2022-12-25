@@ -10,19 +10,21 @@ docker-compose up --build -d
 ssh root@localhost -p 2222
 С таким паролем:
 mapr
-6) Выполнение настройки Spark с помощью команды:
+![index](https://user-images.githubusercontent.com/70959898/209482619-bdb78c92-bb7f-481d-b977-c49dfec71eb6.jpg)
+6) Перейдем в директорию: cd /home/mapr/lab_1
+7) Выполнение настройки Spark с помощью команды:
 echo 'export PATH=$PATH:/opt/mapr/spark/spark-3.2.0/bin' > /root/.bash_profile
 В итоге будет создан файл .bash_profile.
-7) source /root/.bash_profile
-8) apt-get update && apt-get install -y python3-distutils python3-apt
-9) wget https://bootstrap.pypa.io/pip/3.6/get-pip.py
-10) python3 get-pip.py
-11) Установка Jupyter:
+8) source /root/.bash_profile
+9) apt-get update && apt-get install -y python3-distutils python3-apt
+10) wget https://bootstrap.pypa.io/pip/3.6/get-pip.py
+11) python3 get-pip.py
+12) Установка Jupyter:
 pip install jupyter
-12) Установка PySpark:
+13) Установка PySpark:
 pip install pyspark
-13) Запустим Jupyter Notebook на сервере:
+14) Запустим Jupyter Notebook на сервере:
 jupyter-notebook --ip=0.0.0.0 --port=50001 --allow-root --no-browser
 Перейдем по одной из двух ссылок.
-14) Скачанные файлы поместим в «рабочую» папку. 
-15) Далее вся работа осуществляется в файле с раcширением .ipynb.
+15) Скачанные файлы поместим в «рабочую» папку. 
+16) Далее вся работа осуществляется в файле с раcширением .ipynb.
